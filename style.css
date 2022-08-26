@@ -5,22 +5,45 @@
 .body-container {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/* HEADER CSS */
 
 .header-box {
     display: flex;
-    justify-content: center;
-    margin: 16px;
+    padding: 16px;
+    min-width: 80vw;
 }
 
 nav {
     display: flex;
-    min-width: 80vw;
+    width: 100%;
     gap: 8px;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.hero-logo {
+.nav-logo {
     margin-right: auto;
     font-size: 32px;
 }
+
+/* HERO CONTAINER CSS */
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    min-width: 80vw;
+}
+
+.hero-box > * {
+    flex-shrink: 1;
+}
+
+
+
+.hero-image {
+    background-color: beige;
+}
+
