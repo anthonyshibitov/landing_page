@@ -1,0 +1,26 @@
+* {
+    /*border: 1px dashed red;*/
+}
+
+.body-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+nav {
+    display: flex;
+    min-width: 80vw;
+    gap: 8px;
+    align-items: center;
+}
+
+.hero-logo {
+    margin-right: auto;
+    font-size: 32px;
+}
