@@ -7,6 +7,10 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .body-container {
     display:flex;
     flex-direction: column;
@@ -14,10 +18,22 @@ body {
     align-items: center;
 }
 
+button {
+    text-decoration: none;
+    border: none;
+    background-color: #E23E57;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 /* HEADER CSS */
 
 .head-bg {
-    background: yellow;
+    background: #311D3F;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -33,18 +49,28 @@ nav {
     display: flex;
     width: 100%;
     gap: 8px;
-    align-items: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #E23E57;
+    font-weight: bold;
+}
+.nav-logo a {
+    font-weight: bold;
+    color: white;
 }
 
 .nav-logo {
     margin-right: auto;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 /* HERO CONTAINER CSS */
 
 .hero-bg {
-    background: beige;
+    background: #311D3F;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,30 +78,74 @@ nav {
 .hero-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 80vw;
+    gap: 30px;
+    padding: 32px;
 }
 
+/*
 .hero-box > * {
     flex-shrink: 1;
-}
+}*/
+
 
 .hero-image {
-    background-color: beige;
+    border-radius: 16px;
+}
+
+.hero-text{
+    flex-shrink: 2;
+}
+
+.responsive {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.hero-text h2 {
+    color: #E23E57;
+    font-weight: normal;
+}
+
+.hero-text p {
+    color: white;
 }
 
 /* CARDS CONTAINER CSS */
+
+.cards-bg {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .cards-box {
     display: flex;
     flex-direction: column;
     width: 80vw;
     text-align: center;
+    padding: 64px;
+    gap: 48px;
+}
+
+.cards-box p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+
 }
 
 .card-holder {
     display: flex;
     flex-basis: auto;
-    gap: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card-container {
@@ -83,16 +153,96 @@ nav {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    flex-basis: 150px;
+    gap: 16px;
 }
 
 .card { 
     height: 100px;
     width: 100px;
-    border: 1px solid rebeccapurple;
+    background-color: #311D3F;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* QUOTE CONTAINER CSS */
+
+.quote-bg {
+    background: #776472;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    width: 55vw;
+    padding: 100px;
+}
+
+.big-quote {
+    text-align: left;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 32px;
+    color: white;
+}
+
+.lil-quote {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* NEWSLETTER CONTAINER CSS */
+
+.newsletter-bg {
+    background: #311D3F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter {
+    padding: 64px;
+}
+
+.newsletter-box {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 60vw;
+    justify-content: space-between;
+}
+
+.pone, .ptwo {
+    margin: 0px;
+}
+
+.pone {
+    font-size: 20px;
+}
+
+/* FOOTER CONTAINER CSS */
+
+.footer-bg {
+    background: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin: 10px;
+    font-size: 12px;
+}
