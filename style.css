@@ -2,6 +2,11 @@
     /*border: 1px dashed red;*/
 }
 
+body {
+    margin: 0px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
 .body-container {
     display:flex;
     flex-direction: column;
@@ -11,10 +16,17 @@
 
 /* HEADER CSS */
 
+.head-bg {
+    background: yellow;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .header-box {
     display: flex;
     padding: 16px;
-    min-width: 80vw;
+    width: 80vw;
 }
 
 nav {
@@ -31,19 +43,56 @@ nav {
 
 /* HERO CONTAINER CSS */
 
+.hero-bg {
+    background: beige;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .hero-box {
     display: flex;
     justify-content: space-between;
-    min-width: 80vw;
+    width: 80vw;
 }
 
 .hero-box > * {
     flex-shrink: 1;
 }
 
-
-
 .hero-image {
     background-color: beige;
 }
 
+/* CARDS CONTAINER CSS */
+
+.cards-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    text-align: center;
+}
+
+.card-holder {
+    display: flex;
+    flex-basis: auto;
+    gap: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.card { 
+    height: 100px;
+    width: 100px;
+    border: 1px solid rebeccapurple;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* QUOTE CONTAINER CSS */
